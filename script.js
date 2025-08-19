@@ -66,7 +66,7 @@ const DATA = {
     {
       title: "Portfolio Website",
       stack: "HTML, CSS, JavaScript",
-      link: "#", // replace with your GitHub repo link if available
+      link: "https://github.com/nanaji-garikina/Portfolio.git", 
       desc: "Personal responsive portfolio website showcasing skills, projects, and experience.",
     },
     {
@@ -320,3 +320,4 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   alert("Thanks for reaching out! I'll get back to you soon.");
   e.target.reset();
 });
+
