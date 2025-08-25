@@ -66,14 +66,14 @@ const DATA = {
     {
       title: "Portfolio Website",
       stack: "HTML, CSS, JavaScript",
-      link: "https://github.com/nanaji-garikina/Portfolio.git", 
+      link: "https://github.com/nanaji-garikina/Portfolio.git", // replace with your GitHub repo link if available
       desc: "Personal responsive portfolio website showcasing skills, projects, and experience.",
     },
     {
-      title: "Chat Application",
-      stack: "React.js, Node.js, Socket.IO",
-      link: "#", // replace with your GitHub repo link if available
-      desc: "Real-time chat app with multiple users, rooms, and instant messaging functionality.",
+      title: "SGPA Calculator",
+      stack: "HTML,CSS, JavaScript",
+      link: "https://nanaji-garikina.github.io/SGPA_Calculator/", // replace with your GitHub repo link if available
+      desc: "Created an SGPA Calculator for quick and reliable grade point calculation.",
     },
     {
       title: "Countries Population Search",
@@ -320,4 +320,3 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   alert("Thanks for reaching out! I'll get back to you soon.");
   e.target.reset();
 });
-
