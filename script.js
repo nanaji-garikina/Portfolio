@@ -103,6 +103,7 @@ const DATA = {
     },
   ],
   certifications: [
+    "Product Management-simplilearn",
     "Problem Solving Through Programming in C — NPTEL",
     "Programming in Modern C++ — NPTEL",
     "The Joy of Computing using Python — NPTEL",
@@ -320,4 +321,5 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   alert("Thanks for reaching out! I'll get back to you soon.");
   e.target.reset();
 });
+
 
