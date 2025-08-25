@@ -72,7 +72,7 @@ const DATA = {
     {
       title: "SGPA Calculator",
       stack: "HTML,CSS, JavaScript",
-      link: "https://nanaji-garikina.github.io/SGPA_Calculator/", // replace with your GitHub repo link if available
+      link: "https://github.com/nanaji-garikina/SGPA_Calculator.git", // replace with your GitHub repo link if available
       desc: "Created an SGPA Calculator for quick and reliable grade point calculation.",
     },
     {
@@ -320,3 +320,4 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   alert("Thanks for reaching out! I'll get back to you soon.");
   e.target.reset();
 });
+
