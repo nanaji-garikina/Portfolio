@@ -72,7 +72,7 @@ const DATA = {
     {
       title: "SGPA Calculator",
       stack: "HTML,CSS, JavaScript",
-      link: "https://github.com/nanaji-garikina/SGPA_Calculator.git", // replace with your GitHub repo link if available
+      link: "https://nanaji-garikina.github.io/SGPA_Calculator/", // replace with your GitHub repo link if available
       desc: "Created an SGPA Calculator for quick and reliable grade point calculation.",
     },
     {
@@ -82,6 +82,7 @@ const DATA = {
       desc: "Fetches countries & flags via public API with real-time search.",
     },
   ],
+
   education: [
     {
       school: "Raghu Institute Of Technology, Visakhapatnam",
@@ -102,17 +103,33 @@ const DATA = {
       details: "Percentage: 93.3",
     },
   ],
+
   certifications: [
-    "Product Management-simplilearn",
-    "Problem Solving Through Programming in C — NPTEL",
-    "Programming in Modern C++ — NPTEL",
-    "The Joy of Computing using Python — NPTEL",
-    "AWS Cloud — AICTE EduSkills (Virtual Intern)",
-    "Embedded System Developer — AICTE EduSkills",
-    "Cybersecurity — AICTE EduSkills",
-    "Data Structures and Algorithms — Smart Interviews",
+  {
+    name: "Problem Solving Through Programming in C — NPTEL",
+    link: "https://archive.nptel.ac.in/content/noc/NOC23/SEM2/Ecertificates/106/noc23-cs121/Course/NPTEL23CS121S55010579620269695.pdf"
+  },
+  {
+    name: "Programming in Modern C++ — NPTEL",
+    link: "https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs44/Course/NPTEL24CS44S117020012730599994.pdf"
+  },
+  {
+    name: "The Joy of Computing using Python — NPTEL",
+    link: "https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs113/Course/NPTEL24CS113S75290043904160587.pdf"
+  },
+
+  {
+    name: "The Complete Full-Stack Web Development Bootcamp — Udemy",
+    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-fd6f8628-539a-4580-bdf4-cb792fa9d66c.jpg"
+  },
+ 
+  {
+    name: "Data Structures and Algorithms — Smart Interviews",
+    link: "https://smartinterviews.in/certificate/bb3f3f3f"
+  }
   ],
-  stats: { projects: 4, experiences: 2, certs: 7, cgpa: "8.26" },
+
+  stats: { projects: 4, experiences: 2, certs: 5, cgpa: "8.26" },
 };
 
 // ---------- Helpers ----------
@@ -277,11 +294,16 @@ DATA.education.forEach((ed) => {
 // Certifications
 const certWrap = $("#certs");
 DATA.certifications.forEach((c) => {
-  const chip = document.createElement("span");
-  chip.className = "chip";
-  chip.textContent = c;
-  certWrap.appendChild(chip);
+  const div = document.createElement("div");
+  div.className = "cert-card";
+  div.innerHTML = `
+    <a href="${c.link}" target="_blank" rel="noopener">
+      <p>${c.name}</p>
+    </a>
+  `;
+  certWrap.appendChild(div);
 });
+
 
 // Stats
 $("#statProjects").textContent = `${DATA.stats.projects}+`;
@@ -321,5 +343,3 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   alert("Thanks for reaching out! I'll get back to you soon.");
   e.target.reset();
 });
-
-
