@@ -66,13 +66,13 @@ const DATA = {
     {
       title: "Portfolio Website",
       stack: "HTML, CSS, JavaScript",
-      link: "https://github.com/nanaji-garikina/Portfolio.git", // replace with your GitHub repo link if available
+      link: "https://github.com/nanaji-garikina/Portfolio.git", 
       desc: "Personal responsive portfolio website showcasing skills, projects, and experience.",
     },
     {
       title: "SGPA Calculator",
       stack: "HTML,CSS, JavaScript",
-      link: "https://nanaji-garikina.github.io/SGPA_Calculator/", // replace with your GitHub repo link if available
+      link: "https://github.com/nanaji-garikina/SGPA_Calculator.git", 
       desc: "Created an SGPA Calculator for quick and reliable grade point calculation.",
     },
     {
