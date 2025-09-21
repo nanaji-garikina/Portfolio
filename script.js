@@ -76,10 +76,10 @@ const DATA = {
       desc: "Created an SGPA Calculator for quick and reliable grade point calculation.",
     },
     {
-      title: "Countries Population Search",
-      stack: "HTML, CSS, JavaScript, Bootstrap, REST API",
-      link: "https://github.com/nanaji-garikina/Countries-population-search.git",
-      desc: "Fetches countries & flags via public API with real-time search.",
+      title: "Weather App",
+      stack: "HTML, CSS, JavaScript,REST API",
+      link: "https://github.com/nanaji-garikina/weather-app.git",
+      desc: "Responsive web app using HTML, CSS, JavaScript, and REST API for real-time weather data.",
     },
   ],
 
@@ -343,3 +343,4 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   alert("Thanks for reaching out! I'll get back to you soon.");
   e.target.reset();
 });
+
