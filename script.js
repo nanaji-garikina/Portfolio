@@ -26,7 +26,7 @@ const DATA = {
       ["Express", 70],
       ["Python (basics)", 65],
     ],
-    "Databases": [["SQLite", 75]],
+    "Databases": [["SQL", 75]],
     "Other": [
       ["C++", 95],
       ["Java", 80],
@@ -343,4 +343,5 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   alert("Thanks for reaching out! I'll get back to you soon.");
   e.target.reset();
 });
+
 
